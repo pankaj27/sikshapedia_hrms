@@ -1,0 +1,49 @@
+<div class="loginWrap ">
+    <!--- left panel start-->
+    <div class="d-flex loginSide">
+        <div class="logincon">
+            <img src="http://127.0.0.1:8000/assets/img/sikshapedia.png" alt="" class="logo">
+            <div class="loginBox">
+                <h2>User Login</h2>
+                <p class="text-white">Sign in to Sikshapedia HRMS </p>
+                    
+                <form id="loginPost" class="needs-validation" novalidate>
+                    <input type="hidden" name="_token" value="BTG4NqvrArrytvQxmhhvTPfenYr23AQ9EHpNboSa" autocomplete="off">                        <div id="errors-list"></div>
+                    <div class="form-gorup mb-3">
+                        <input type="text"  name="EmailId" [(ngModel)]="loginObj.EmailId" class="form-control loginField" placeholder="Enter Email" value="" required>
+                        
+                        <div class="invalid-feedback" style="color:white;">
+                            Please enter a Email.
+                        </div>
+                                                
+                    </div>
+                    <div class="form-gorup mb-3">
+                        <input type="password" id="password" [(ngModel)]="loginObj.Password" required="required" name="Password" class="form-control loginField" placeholder="Password">
+                        <div class="invalid-feedback" style="color:white;">
+                            Please enter a password.
+                        </div>
+                    </div>
+                    <div class="d-flex flex-md-row flex-sm-column justify-content-between align-items-center">
+                        <div>
+                            <button class="btn btn-primary loginBtn" (click)="onLogin()" type="button" id="emp_login">Login</button>
+                        </div>
+                       
+                    </div>
+                </form>
+            </div>
+        </div>   
+
+    </div>
+    <!--- left panel start-->
+
+    <!--- right panel start-->
+    <div class=" loginRight "> 
+        <div class=""><img src="http://127.0.0.1:8000/assets/img/siksh_icon.png" alt="" class="logoIcon"></div>
+        <div><img src="http://127.0.0.1:8000/assets/img/login_right.png" alt=""  class="loginrightImg"></div>
+
+      
+       
+    </div>
+     <!--- right panel end-->
+
+</div>
